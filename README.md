@@ -1,10 +1,9 @@
-# Selenium_Maven_TestNG_Allure
 
 Selenium_Maven_TestNG_Allure
 =======================
 
 
-A maven template for Selenium that has the latest dependencies so that you can just check out and start writing tests in five easy steps.
+A maven template for Selenium that has the latest dependencies for allure reports so that you can just check out and start writing tests in six easy steps.
 
 
 1. Open a terminal window/command prompt
