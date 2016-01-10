@@ -25,7 +25,7 @@
     <modelVersion>4.0.0</modelVersion>
 
 
-    <name>Maven_TestNG_Allure</name>
+    <name>Selenium TestNG Maven Allure Template</name>
     <description>A Maven Template For Selenium Selenium TestNG Allure</description>
     <url>http://www.lazerycode.com</url>
 

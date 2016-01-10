@@ -1,6 +1,6 @@
-# Maven_TestNG_Allure
+# Selenium_Maven_TestNG_Allure
 
-Selenium-Maven-Template
+Selenium_Maven_TestNG_Allure
 =======================
 
 
@@ -10,9 +10,10 @@ A maven template for Selenium that has the latest dependencies so that you can j
 1. Open a terminal window/command prompt
 2. Clone this project.
 3. CD into project directory
-4. mvn clean verify - This will run the tests and generate allure results xml files in target
-5. xcopy "target/allure-results" allure-results && mvn site -Dallure.results_pattern=allure-results - This will create allure reports
-6. mvn jetty:run -Djetty.port=1234 - Deploy reports on port:1234
+4. mvn clean verify - This will run the tests and generate allure results xml files in target[For linux remember to run with sudo if not running as root]
+5. For windows user: xcopy "target/allure-results" allure-results && mvn site -Dallure.results_pattern=allure-results - This will create allure reports
+For linux and mac: sudo cp -r target/allure-results/ . and then sudo mvn site -Dallure.results_pattern=allure-results - This will create allure reports
+6. mvn jetty:run -Djetty.port=1234 - Deploy reports on port:1234 [Use sudo for linux and mac]
 [please use mvn jetty:stop -Djetty.port=1234 before running next build]
 
 All dependencies should now be downloaded and the example google cheese test will have run successfully (Assuming you have Firefox installed in the default location)
