@@ -11,7 +11,7 @@ A maven template for Selenium that has the latest dependencies for allure report
 3. CD into project directory
 4. mvn clean verify - This will run the tests and generate allure results xml files in target[For linux remember to run with sudo if not running as root]
 5. For windows user: xcopy "target/allure-results" allure-results && mvn site -Dallure.results_pattern=allure-results - This will create allure reports
-For linux and mac: sudo cp -r target/allure-results/ . and then sudo mvn site -Dallure.results_pattern=allure-results - This will create allure reports
+For linux and mac: sudo cp -r target/allure-results/ . && sudo mvn site -Dallure.results_pattern=allure-results - This will create allure reports
 6. mvn jetty:run -Djetty.port=1234 - Deploy reports on port:1234 [Use sudo for linux and mac]
 [please use mvn jetty:stop -Djetty.port=1234 before running next build]
 
