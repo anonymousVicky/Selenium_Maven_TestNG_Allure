@@ -21,6 +21,8 @@ sudo mvn jetty:stop -Djetty.port=1234 && sudo mvn clean verify && sudo cp -r tar
 All in one command for windows: 
 mvn jetty:stop -Djetty.port=1234 && mvn clean verify && xcopy "target/allure-results" allure-results && mvn site -Dallure.results_pattern=allure-results && mvn jetty:run -Djetty.port=1234
 
+**Currently all in one target will only work if all tests are passing. All in one target is in progress
+
 
 All dependencies should now be downloaded and the example google cheese test will have run successfully (Assuming you have Firefox installed in the default location)
 
