@@ -15,6 +15,13 @@ For linux and mac: sudo cp -r target/allure-results/ . && sudo mvn site -Dallure
 6. mvn jetty:run -Djetty.port=1234 - Deploy reports on port:1234 [Use sudo for linux and mac]
 [please use mvn jetty:stop -Djetty.port=1234 before running next build]
 
+All in one command for linux
+sudo mvn jetty:stop -Djetty.port=1234 && sudo mvn clean verify && sudo cp -r target/allure-results/ . && sudo mvn site -Dallure.results_pattern=allure-results && sudo mvn jetty:run -Djetty.port=1234
+
+All in one command for windows
+mvn jetty:stop -Djetty.port=1234 && mvn clean verify && xcopy "target/allure-results" allure-results && mvn site -Dallure.results_pattern=allure-results && mvn jetty:run -Djetty.port=1234
+
+
 All dependencies should now be downloaded and the example google cheese test will have run successfully (Assuming you have Firefox installed in the default location)
 
 ### What should I know?
